@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+    width: 300px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .selectBox {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    background: transparent;
+  }
+  
+  .arrow {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .option {
+    padding: 10px 16px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    &:hover {
+      background: #f6f8fc;
+    }
+  }
+  
+  .selected {
+    background: #e8f0fe;
+  }
+  
+  .check {
+    font-size: 16px;
+  }
+  

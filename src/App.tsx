@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css'
-import { GeneralSelect } from './components'
+import { GeneralSelect, SingleSelect } from './components'
 
 function App() {
   const [selected, setSelected] = useState<string[]>([]);
@@ -24,6 +24,13 @@ function App() {
             value={selected}
             onChange={setSelected}
             placeholder="Select category"
+          />
+          <SingleSelect
+            options={options}
+            value={selected}
+            onChange={setSelected}
+            placeholder="Select category"
+
           />
         </div>
       </div>
